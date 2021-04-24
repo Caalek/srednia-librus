@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import GradeForm from './components/GradeForm'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row className="mt-5">
+        <Col>
+          <img src="img/libruslogo.jpg" alt="logo librusa" height="200"></img>
+          <h1 className="mt-4">KALKULATOR ŚREDNIEJ LIBRUS</h1>
+        </Col>
+      </Row>
+      <Row className="justify-content-center mt-3">
+        <Col md={6}>
+          <GradeForm />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
