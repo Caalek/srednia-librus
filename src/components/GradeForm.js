@@ -71,7 +71,7 @@ export default function GradeForm() {
             <Col>
               <Form.Group>
                 <Form.Label>OCENA:</Form.Label>
-                <Form.Control as="select" onChange={(e) => {setGrade(e.target.value)}}>
+                <Form.Control as="select" onChange={(e) => {setGrade(parseFloat(e.target.value))}}>
                   <option value="6">6</option>
                   <option value="5.5">5+</option>
                   <option value="5">5</option>
@@ -104,7 +104,7 @@ export default function GradeForm() {
             </Col>
             <Col>
               <Form.Group>
-                <Button variant="primary" size="lg" type="submit" className="mt-3">DODAJ</Button>
+                <Button variant="primary" type="submit" size="lg" className="mt-3">DODAJ</Button>
               </Form.Group>
             </Col>
           </Row>

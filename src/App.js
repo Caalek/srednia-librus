@@ -8,8 +8,8 @@ function App() {
     <Container>
       <Row className="mt-5">
         <Col>
-          <img src="img/libruslogo.jpg" alt="logo librusa" height="200"></img>
-          <h1 className="mt-4">KALKULATOR ŚREDNIEJ LIBRUS</h1>
+          <img src="img/libruslogo.jpg" alt="logo librusa" height="120"></img>
+          <h1 className="mt-4 main-title">KALKULATOR ŚREDNIEJ LIBRUS</h1>
         </Col>
       </Row>
       <Row className="justify-content-center mt-3">

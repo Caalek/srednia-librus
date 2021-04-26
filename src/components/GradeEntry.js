@@ -10,7 +10,7 @@ export default function GradeEntry(props) {
       <Card.Body>
         <Row>
           <Col>
-            <span className="gradeshow"><span className="librus-purple">{props.gradeText}</span> waga <span className="librus-purple">{props.weight}</span></span>
+            <span className="gradeshow"><span className="librus-purple">{props.gradeText}</span> wagi <span className="librus-purple">{props.weight}</span></span>
           </Col>
           <Col>
             <Button size="sm" className="mt-1" onClick={() => {props.removeGrade(props.id)}}>USUŃ</Button>

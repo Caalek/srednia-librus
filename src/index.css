@@ -9,11 +9,15 @@ body {
 }
 
 .gradeshow {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .librus-purple {
   color: #9E5A89;
+}
+
+.main-title {
+  font-size: 25px;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
