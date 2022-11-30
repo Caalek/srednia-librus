@@ -94,6 +94,7 @@ export default function GradeForm() {
               <Form.Group>
                 <Form.Label>WAGA:</Form.Label>
                 <Form.Control as="select" onChange={(e) => {setWeight(parseInt(e.target.value))}}>
+                  <option>6</option> 
                   <option>5</option>
                   <option>4</option>
                   <option>3</option>
