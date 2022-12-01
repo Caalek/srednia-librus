@@ -21,8 +21,7 @@ export default function GradeForm() {
       weight: weight,
       id: uuid()
     }
-    console.log(changeGradeFormat(grade))
-    setGrades(grades.concat([newGrade]))
+    setGrades([newGrade].concat(grades))
   }
 
   function changeGradeFormat(grade) {
@@ -58,7 +57,6 @@ export default function GradeForm() {
     setGrades(grades.filter(grade => grade.id !== id))
   }
 
-  console.log('grades', grades)
   return (
     <div>
       <div className="big mb-2">
@@ -114,8 +112,8 @@ export default function GradeForm() {
       </Card>
       <div className="mt-3">
         {
-          grades.map(grade => {
-            return <GradeEntry key={grade.id} id={grade.id} gradeText={grade.gradeText} weight={grade.weight} removeGrade={removeGrade}></GradeEntry>
+          grades.map((grade, index) => {
+            return <GradeEntry key={grade.id} id={grade.id} index={grades.length - index} gradeText={grade.gradeText} weight={grade.weight} removeGrade={removeGrade}></GradeEntry>
           })
         }
       </div>

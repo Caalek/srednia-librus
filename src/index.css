@@ -4,16 +4,20 @@ body {
 }
 
 .big {
-  font-size: 50px;
+  font-size: 48px;
   color: #9E5A89;
 }
 
 .gradeshow {
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .librus-purple {
   color: #9E5A89;
+}
+
+.faded {
+  color: #7b8188;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {

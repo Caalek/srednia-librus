@@ -9,10 +9,13 @@ export default function GradeEntry(props) {
     <Card className="mt-3">
       <Card.Body>
         <Row>
-          <Col>
+          <Col className="mt-2 faded" xs={2}>
+            {props.index}
+          </Col>
+          <Col xs={5}>
             <span className="gradeshow"><span className="librus-purple">{props.gradeText}</span> waga <span className="librus-purple">{props.weight}</span></span>
           </Col>
-          <Col>
+          <Col xs={5}>
             <Button size="sm" className="mt-1" onClick={() => {props.removeGrade(props.id)}}>USUŃ</Button>
           </Col>
         </Row>
