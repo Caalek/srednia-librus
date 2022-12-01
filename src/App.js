@@ -6,13 +6,13 @@ import GradeForm from './components/GradeForm'
 function App() {
   return (
     <Container>
-      <Row className="mt-5">
+      <Row className="mt-3">
         <Col>
           <img src="img/libruslogo.jpg" alt="logo librusa" height="100"></img>
           <h3 className="mt-4">KALKULATOR ŚREDNIEJ LIBRUS</h3>
         </Col>
       </Row>
-      <Row className="justify-content-center mt-3">
+      <Row className="justify-content-center mt-1">
         <Col md={6}>
           <GradeForm />
         </Col>

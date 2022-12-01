@@ -10,7 +10,7 @@ import GradeEntry from './GradeEntry'
 export default function GradeForm() {
   const [grades, setGrades] = useState([])
   const [grade, setGrade] = useState(6)
-  const [weight, setWeight] = useState(5)
+  const [weight, setWeight] = useState(6)
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -21,11 +21,11 @@ export default function GradeForm() {
       weight: weight,
       id: uuid()
     }
+
     setGrades([newGrade].concat(grades))
   }
 
   function changeGradeFormat(grade) {
-    console.log(grade)
     let result
     if (String(grade).endsWith('.5')) {
       result = String(Math.floor(grade)) + '+' 

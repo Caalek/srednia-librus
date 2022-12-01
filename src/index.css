@@ -8,15 +8,16 @@ body {
   color: #9E5A89;
 }
 
-.gradeshow {
-  font-size: 23px;
+.grade-text {
+  font-size: 21px;
 }
 
 .librus-purple {
   color: #9E5A89;
 }
 
-.faded {
+.index {
+  font-size: 17px;
   color: #7b8188;
 }
 
