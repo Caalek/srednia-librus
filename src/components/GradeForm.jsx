@@ -57,6 +57,10 @@ export default function GradeForm() {
     setGrades(grades.filter(grade => grade.id !== id))
   }
 
+  function clearGrades() {
+    setGrades([])
+  }
+
   return (
     <div>
       <div className="big mb-2">
@@ -105,6 +109,11 @@ export default function GradeForm() {
               <Form.Group>
                 <Button variant="primary" size="lg" type="submit" className="mt-3">DODAJ</Button>
               </Form.Group>
+            </Col>
+          </Row>
+          <Row className='mt-3'>
+            <Col>
+              <Button variant="primary" size="sm" onClick={clearGrades}>USUŃ WSZYSTKIE</Button>
             </Col>
           </Row>
         </Form>

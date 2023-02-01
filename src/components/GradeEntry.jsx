@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 export default function GradeEntry(props) {
-  console.log(props)
   return (
     <Card className="mt-3">
       <Card.Body>
